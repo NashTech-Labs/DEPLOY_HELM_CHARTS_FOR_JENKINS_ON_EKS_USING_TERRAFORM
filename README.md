@@ -24,15 +24,6 @@ of them. In this, I'm deploying Jenkins on EKS.
 * Go to your browser and navigate to ```http://<dns-address>:<port>```  
 * Log in with the credentials you set in the ```*-values.yaml``` or the ```helm_release.tf```
 
-### Connecting
-* Run ```aws eks --region us-east-1 update-kubeconfig --name basic-cluster``` to add the context to your kubeconfig
 
-### Troubleshooting
-
-#### Pods stuck in Pending
-* Possibility of resources not efficient. The instances in the worker group could be too small to assign IP addresses to all the pods
-
-#### Workers not joining the cluster
-* Ensure the workers are getting public IP addresses
 
 
